@@ -480,3 +480,20 @@
     transform: translateY(0);
     filter: blur(0);
 }
+
+.icon-link {
+  font-size: 32px;
+  color: #5a3c1f; /* warna kopi */
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.icon-link:hover {
+  color: #b88646; /* warna emas kopi */
+}
+
+.kontak-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
