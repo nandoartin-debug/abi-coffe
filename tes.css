@@ -49,7 +49,7 @@
 
     /* ==== HERO SECTION ==== */
     .hero {
-        height: 90vh;
+        min-height: 100vh;
         background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
         display: flex;
         flex-direction: column;
@@ -58,6 +58,8 @@
         text-align: center;
         color: white;
         padding: 0 20px;
+        overflow: visible;
+        height: auto;
     }
 
     .hero h2 {
@@ -547,7 +549,6 @@
   margin: 10px auto;
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .hero {
     text-align: center;
@@ -555,17 +556,18 @@
   }
 
   .hero h2 {
-    font-size: 26px;   /* Mengecil di mobile */
+    font-size: 26px;
     line-height: 1.35;
+    white-space: normal; /* memastikan teks bisa turun baris */
   }
 
   .hero p {
-    font-size: 14px;   /* Lebih kecil supaya proporsional */
+    font-size: 14px;
     line-height: 1.4;
   }
 
   .hero button {
-    margin: 15px auto; /* Biar ikut center di mobile */
     display: block;
+    margin: 15px auto;
   }
 }
