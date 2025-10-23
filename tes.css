@@ -58,8 +58,6 @@
         text-align: center;
         color: white;
         padding: 0 20px;
-        overflow: visible;
-        height: auto;
     }
 
     .hero h2 {
@@ -534,40 +532,22 @@
   }
 }
 
-/* Default (Desktop) */
-.hero h2 {
-  font-size: 42px;
-  font-weight: bold;
-  line-height: 1.3;
-  color: #fff;
-}
-
-.hero p {
-  font-size: 18px;
-  color: #fff;
-  max-width: 600px;
-  margin: 10px auto;
-}
-
-/* Mobile */
+/* Atur tampilan hero text di mobile */
 @media (max-width: 768px) {
-  .hero {
+  .hero-content h1 {
+    font-size: 26px;
+    line-height: 1.3;
     text-align: center;
-    padding: 0 18px;
+    padding: 0 10px;
   }
 
-  .hero h2 {
-    font-size: 26px;   /* Mengecil di mobile */
-    line-height: 1.35;
+  .hero-content p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 15px;
   }
 
-  .hero p {
-    font-size: 14px;   /* Lebih kecil supaya proporsional */
-    line-height: 1.4;
-  }
-
-  .hero button {
-    margin: 15px auto; /* Biar ikut center di mobile */
-    display: block;
+  .hero-content {
+    text-align: center;
   }
 }
