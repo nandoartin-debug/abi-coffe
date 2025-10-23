@@ -97,11 +97,13 @@
     .hero h2 {
         display: inline-block;
         overflow: hidden;
+        white-space: nowrap;
+        /* efek typing harus satu baris */
+        border-right: 2px solid #ffcc80;
         width: 0;
-        white-space: normal;
-        /* ← ini penting agar boleh turun baris */
-        animation: typing 3s steps(35, end) forwards, blink 0.7s infinite;
+        animation: typing 3s steps(40, end) forwards, blink 0.7s infinite;
     }
+
 
 
     @keyframes typing {
@@ -384,12 +386,6 @@
         }
     }
 
-    @media (max-width: 480px) {
-        .hero h2 {
-            width: 100%;
-            /* memastikan animasi mengetik mengikuti lebar layar HP */
-        }
-    }
 
 
     /* ==== RESPONSIVE MOBILE SMALL (HP) ==== */
@@ -582,5 +578,15 @@
         .hero button {
             display: block;
             margin: 15px auto;
+        }
+    }
+
+    /* ==== RESPONSIVE FIX KHUSUS HP AGAR TIDAK TERPOTONG ==== */
+    @media (max-width: 480px) {
+        .hero h2 {
+            font-size: 1.6rem;
+            /* lebih kecil agar muat layar */
+            width: 100vw;
+            /* supaya animasi mengikuti lebar layar HP */
         }
     }
