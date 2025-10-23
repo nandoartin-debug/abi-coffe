@@ -531,3 +531,23 @@
     display: flex;
   }
 }
+
+/* Atur tampilan hero text di mobile */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 26px;
+    line-height: 1.3;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+}
